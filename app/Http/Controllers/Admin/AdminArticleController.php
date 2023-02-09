@@ -26,6 +26,9 @@ class AdminArticleController extends Controller
     {
         $menus = Menu::all();
 
+
+
+
         return view('admin.article.create',compact('menus'));
     }
 
