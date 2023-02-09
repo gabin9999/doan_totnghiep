@@ -12,7 +12,7 @@ use Carbon\Carbon;
 
 class AdminArticleController extends Controller
 {
-    public function index()qưe
+    public function index()
     {
         $articles = Article::with('menu:id,mn_name')->paginate(10);
         $viewData = [
